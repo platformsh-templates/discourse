@@ -5,6 +5,7 @@
 rsync -avq files/* discourse/
 
 cd discourse
+rm -rf .git
 
 patch -p1 < ../force_https.patch
 
