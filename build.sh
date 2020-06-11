@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./download-discourse.sh v2.4.5
+# ./download-discourse.sh v2.4.5
 
 rsync -avq files/* discourse/
 
