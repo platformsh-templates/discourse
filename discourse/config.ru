@@ -5,6 +5,6 @@ ENV["DISCOURSE_RUNNING_IN_RACK"] = "1"
 
 require ::File.expand_path('../config/environment',  __FILE__)
 
-map ActionController::Base.config.try(:relative_url_root) || "/" do
+map ActionController::Base.config.try(:relative_url_root) || "/discourse" do
   run Discourse::Application
 end
